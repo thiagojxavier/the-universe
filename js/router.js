@@ -71,13 +71,3 @@ export class Router {
         }
     }
 }
-    
-        document.querySelector('a[href="' + pathname + '"]').classList.add("page-current");
-    }
-
-    loading() {
-        const img = `<div class="container-loading"><img src="./loading/rotate.png" alt="loading" class="loading"></div>`;
-
-        return img;
-    }
-}
