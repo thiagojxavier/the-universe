@@ -41,7 +41,6 @@ export class Router {
         }
 
         if(!pathnameElement[pathname]) {
-            console.log(pathnameElement[pathname])
             return
         }
 
