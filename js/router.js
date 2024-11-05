@@ -34,13 +34,20 @@ export class Router {
     }
 
     changeStrong(pathname) {
-        if(!document.querySelector('a[href="' + pathname + '"]')) {
+        const pathnameElement = {
+            '/': document.getElementById('home'),
+            '/universe': document.getElementById('universe'),
+            '/exploration': document.getElementById('exploration')
+        }
+
+        if(!pathnameElement[pathname]) {
+            console.log(pathnameElement[pathname])
             return
         }
 
         document.querySelector('.page-current').classList.remove("page-current");
     
-        document.querySelector('a[href="' + pathname + '"]').classList.add("page-current");
+        pathnameElement[pathname].classList.add("page-current");
     }
 
     loading() {
