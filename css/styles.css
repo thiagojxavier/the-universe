@@ -99,7 +99,7 @@ a {
     justify-content: center;
 }
 
-.right {
+.padding {
     padding: 8em;
 }
 
@@ -129,5 +129,44 @@ a {
         transform: rotate(0deg);
     } 100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 700px) {
+    .container-header {
+        padding: 1em .5em;
+    }
+
+    .container-header, ul {
+        gap: 1em;
+    }
+
+    a {
+        font-size: .8em;
+    }
+
+    #root > div {
+        gap: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #root  div  h1 {
+        font-size: 30px;
+    }
+
+    #root  div  button {
+        padding:  .2em .8em;
+        font-size: 10px;
+    }
+
+    .padding {
+        padding: 1em;
+    }
+
+    #root  div  p {
+        max-width: 500px;
+        font-size: 1.3em;
     }
 }
